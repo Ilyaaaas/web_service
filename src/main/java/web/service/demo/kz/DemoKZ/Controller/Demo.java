@@ -18,9 +18,9 @@ import java.util.ArrayList;
 public class Demo
 {
 
-    private static final String URL  = "jdbc:mysql://78.40.108.24:3306/web_service_db";
+    //private static final String URL  = "jdbc:mysql://78.40.108.24:3306/web_service_db";
     //поменять адрес при переносе на сервер!!!
-    //private static final String URL  = "jdbc:mysql://localhost:3306/web_service_db";
+    private static final String URL  = "jdbc:mysql://localhost:3306/web_service_db";
     private static final String USER_NAME  = "root";
     private static final String PASSWORD  = "Astana2018";
 
