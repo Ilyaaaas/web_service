@@ -16,13 +16,15 @@ import java.util.Collections;
 
 @Configuration
 @EnableSwagger2
-public class SwaggerConfig extends WebMvcConfigurationSupport {
+public class SwaggerConfig extends WebMvcConfigurationSupport
+{
     @Bean
-    public Docket api() {
+    public Docket api()
+    {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("web.service.demo.kz.DemoKZ.Controller"))
-                .paths(PathSelectors.ant("/demo/**"))
+                .paths(PathSelectors.ant("/**"))
                 .build();
                 //.apiInfo(apiInfo());
     }
